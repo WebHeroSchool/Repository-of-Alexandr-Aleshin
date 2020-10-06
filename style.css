@@ -1,19 +1,40 @@
 body {
-
+    margin: 0;
 }
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+
+/*Container*/
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/*Header*/
+
+.header {
+    display: inline-block;
+}
+
 
 /*Logo*/
 
-
-.logo {
+.header__logo {
     font-family: 'PT Serif', serif;
     font-size: 24px;
+
+    margin-right: 63%;
 }
 
 
 /*Nav*/
 
-.nav {
+.header__nav {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
