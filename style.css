@@ -18,7 +18,9 @@ h1, h2, h3, h4, h5 {
 /*Header*/
 
 .header {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -27,19 +29,30 @@ h1, h2, h3, h4, h5 {
 .header__logo {
     font-family: 'PT Serif', serif;
     font-size: 24px;
+    padding: 40px 0;
 
-    margin-right: 63%;
 }
 
 
 /*Nav*/
 
 .header__nav {
+}
+
+.nav__link {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
+    text-decoration: none;
+    color: #000;
+
+    padding: 0 13px;
+
 }
 
+.nav__link:last-child {
+    padding-right: 0;
+}
 
 /*Main*/
 
