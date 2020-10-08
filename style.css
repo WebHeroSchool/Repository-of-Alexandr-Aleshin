@@ -49,6 +49,8 @@ h1, h2, h3, h4, h5 {
 .logo__circle_color_dark-blue {
     border-radius: 50%;
     background-color: #0056EC;
+    opacity: .7;
+
 }
 
 .header__logo {
