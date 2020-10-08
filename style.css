@@ -21,16 +21,45 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 
 /*Logo*/
 
-.header__logo {
-    font-family: 'PT Serif', serif;
-    font-size: 24px;
-    padding: 40px 0;
+.logo__circle {
+    width: 28px;
+    height: 28px;
 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.logo__circle_color_blue {
+    top: 56%;
+    left: 8px;
+
+    background-color: #C8DBFB;
+    border-radius: 50%;
+    opacity: .7;
+}
+
+.logo__circle_color_dark-blue {
+    border-radius: 50%;
+    background-color: #0056EC;
+}
+
+.header__logo {
+    position: relative;
+
+    padding: 40px 0 40px 44px;
+
+    font-family: 'pt_serifbold', serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 31px;
 }
 
 
@@ -78,4 +107,8 @@ h1, h2, h3, h4, h5 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
+}
+
+.checkfonts1 {
+    font-family: 'pt_serifbold_italic';
 }
