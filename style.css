@@ -106,25 +106,31 @@ h1, h2, h3, h4, h5 {
     transition: width .2s linear;
 }
 
-.nav__link:hover:after {
+.nav__link:hover:after,
+.nav__link_active:after {
     width: 100%;
 }
 
 /*Main*/
 
 .main{
-
+    margin-top: 100px;
+    padding-right: 63%;
 }
 
 .main__title {
     font-family: 'Pt-serif', serif;
     font-size: 50px;
+
+    margin-bottom: 40px;
 }
 
 .main__subtitle {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
+
+    margin-bottom: 41px;
 }
 
 
@@ -134,5 +140,8 @@ h1, h2, h3, h4, h5 {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
+
+    background-color: #0056EC;
+
 }
 
