@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My New Document</title>
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -14,15 +15,23 @@
         <div class="header__logo">
            <div class="logo__circle logo__circle_color_dark-blue"></div>
             <div class="logo__circle logo__circle_color_blue"></div>
-            app.creation</div>
+            <span class="logo__title">app.creation</span>
+            </div>
 
-        <nav class="header__nav">
-            <a href="#" class="nav__link">start</a>
-            <a href="#" class="nav__link nav__link_active">services</a>
-            <a href="#" class="nav__link">about</a>
-            <a href="#" class="nav__link">blog</a>
-            <a href="#" class="nav__link">contact us</a>
+        <input type="checkbox" id="nav__toggle">
+        <label for="nav__toggle" class="burger__btn">
+            <span></span>
+        </label>
+
+
+        <nav class="header__nav header__nav_mobile">
+            <a href="#" class="nav__link nav__link_mobile">start</a>
+            <a href="#" class="nav__link nav__link_mobile nav__link_active">services</a>
+            <a href="#" class="nav__link nav__link_mobile">about</a>
+            <a href="#" class="nav__link nav__link_mobile">blog</a>
+            <a href="#" class="nav__link nav__link_mobile">contact us</a>
         </nav>
+
     </header>
 
     <section>
@@ -38,3 +47,6 @@
     </div>
 </body>
 </html>
+
+
+
