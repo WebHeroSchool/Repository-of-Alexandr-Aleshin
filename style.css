@@ -17,6 +17,50 @@ h1, h2, h3, h4, h5 {
 
 /*Header*/
 
+/*=============================Burger=================*/
+
+#menu__toggle {
+    display: none;
+}
+
+.menu__btn {
+    display: none;
+    align-items: center;
+    position: fixed;
+
+    top: 32px;
+    right: 24px;
+
+    width: 25px;
+    height: 27px;
+
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    content: '';
+    position: absolute;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #0056EC;
+}
+
+.menu__btn > span::before {
+    top: -7px;
+}
+
+.menu__btn > span::after {
+    top: 7px;
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -75,7 +119,7 @@ h1, h2, h3, h4, h5 {
 .nav__link {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
     color: #000;
 
@@ -112,28 +156,16 @@ h1, h2, h3, h4, h5 {
     width: 100%;
 }
 
+
 /*Main*/
 
 .main{
-    padding-right: 63%;
-    background: center right url(img/Frame.svg) no-repeat;
-    padding: 0 63% 100px 0;
-}
+    background: top right url(img/Frame.svg) no-repeat;
+    background-position: top right;
 
-.main__title:before {
-    content: "";
-    display: block;
+    background-size: 514px 439px;
 
-    width: 380px;
-    height: 53px;
-
-    position: absolute;
-    top: 75px;
-    left: 0;
-    z-index: -1;
-
-    background-color: #C8DBFB;
-    opacity: .3;
+    padding: 0 63% 361px 0;
 }
 
 .main__title {
@@ -141,26 +173,10 @@ h1, h2, h3, h4, h5 {
     font-size: 50px;
 
     margin-bottom: 40px;
-
-    position: relative;
-
 }
 
-
-.main__title:after {
-    content: "";
-    display: block;
-
-    width: 226px;
-    height: 53px;
-
-    position: absolute;
-    top: 145px;
-    left: 0;
-    z-index: -1;
-
-    background-color: #C8DBFB;
-    opacity: .3;
+.title__background {
+    background-color: #ECF3FF;
 }
 
 .main__subtitle {
@@ -194,4 +210,212 @@ h1, h2, h3, h4, h5 {
 .main__btn:hover {
     background-color: #00389a;
 }
+
+
+
+/*===============Media=============*/
+
+
+@media(min-width: 1800px) {
+    .logo__title {
+        font-size: 24px;
+    }
+
+    .nav__link {
+        font-size: 18px;
+    }
+
+    .main {
+        padding: 0 63% 507px 0;
+        background-size: 770px 657px;
+        background-position: 728px 0;
+
+    }
+
+    .main__title {
+        font-size: 66px;
+
+    }
+
+    .main__subtitle {
+        font-size: 22px;
+    }
+
+    .main__btn {
+        font-size: 18px;
+    }
+}
+
+
+
+@media(max-width: 1024px) {
+    .main {
+        padding: 0 63% 361px 0;
+        background-size: 410px 351px;
+        background-position: top right;
+    }
+
+    .main__title {
+        font-size: 38px;
+        margin-bottom: 40px;
+
+    }
+
+    .main__subtitle {
+        font-size: 14px;
+        margin-bottom: 41px;
+    }
+}
+
+/*Mobile version*/
+
+@media(max-width: 768px) {
+    .header {
+        margin-bottom: 28px;
+    }
+
+    .logo__title {
+        display: none;
+    }
+    .header__nav {
+        display: none;
+    }
+
+    .main {
+        padding: 74% 48px 43px;
+        background-position: top center;
+        background-size: 74%;
+        text-align: center;
+    }
+
+    .main__title {
+        font-size: 30px;
+        margin-bottom: 44px;
+    }
+
+    .main__subtitle {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+/*=========================================Burger===========*/
+    .menu__btn {
+        display: flex;
+    }
+
+    .nav__link {
+        margin-right: 0;
+    }
+
+    .header__nav_mobile {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+
+        top: 0;
+        left: 100%;
+
+        text-align: center;
+
+        width: 300px;
+        height: 100%;
+        padding: 30% 40%;
+
+        background-color: #fff;
+    }
+
+    .nav__link_mobile {
+        display: block;
+        width: 144px;
+
+        margin: 24px 0;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked ~ .header__nav_mobile {
+        visibility: visible;
+        left: 0
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        transition-duration: .25s;
+    }
+
+    .header__nav_mobile {
+        transition-duration: .25s;
+    }
+}
+
+@media(max-width: 400px) {
+    .header__nav_mobile {
+        padding: 30% 30%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
