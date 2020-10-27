@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5 {
 /*Container*/
 
 .container {
-    width: 80%;
+    width: 68%;
     margin: auto;
 }
 
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     position: fixed;
 
-    top: 32px;
+    top: 27px;
     right: 24px;
 
     width: 25px;
@@ -119,11 +119,11 @@ h1, h2, h3, h4, h5 {
 .nav__link {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
     color: #000;
 
-    margin-right: 25px;
+    margin-right: 17px;
 
     position: relative;
 
@@ -161,18 +161,18 @@ h1, h2, h3, h4, h5 {
 
 .main{
     background: top right url(img/Frame.svg) no-repeat;
-    background-position: top right;
-
+    background-position: 416px 0px;
     background-size: 514px 439px;
 
-    padding: 0 63% 361px 0;
+
+    padding: 0 58% 361px 0;
 }
 
 .main__title {
     font-family: 'Pt-serif', serif;
     font-size: 50px;
 
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .title__background {
@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5 {
     font-weight: 500;
     font-size: 18px;
 
-    margin-bottom: 41px;
+    margin-bottom: 40px;
 }
 
 
@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5 {
     font-weight: 500;
     font-size: 14px;
 
-    padding: 14px 16px;
+    padding: 14px 21px;
     color: #fff;
     background-color: #0056EC;
 
@@ -216,7 +216,14 @@ h1, h2, h3, h4, h5 {
 /*===============Media=============*/
 
 
-@media(min-width: 1800px) {
+@media(min-width: 1920px) {
+    .container {
+        width: 80%;
+    }
+    .header {
+        margin-bottom: 131px;
+    }
+
     .logo__title {
         font-size: 24px;
     }
@@ -226,13 +233,15 @@ h1, h2, h3, h4, h5 {
     }
 
     .main {
-        padding: 0 63% 507px 0;
+        padding: 0 63% 173px 0;
         background-size: 770px 657px;
-        background-position: 728px 0;
+        background-position: 761px 0;
 
     }
 
     .main__title {
+        padding-top: 71px;
+        margin-bottom: 36px;
         font-size: 66px;
 
     }
@@ -243,26 +252,30 @@ h1, h2, h3, h4, h5 {
 
     .main__btn {
         font-size: 18px;
+        padding: 18px 29px;
     }
 }
 
 
 
 @media(max-width: 1024px) {
+    .container {
+        width: 91%;
+    }
     .main {
-        padding: 0 63% 361px 0;
-        background-size: 410px 351px;
-        background-position: top right;
+        padding: 0 58% 361px 0;
+        background-size: 514px 439px;
+        background-position: 417px 0;
     }
 
     .main__title {
-        font-size: 38px;
-        margin-bottom: 40px;
+        font-size: 50px;
+        margin-bottom: 37px;
 
     }
 
     .main__subtitle {
-        font-size: 14px;
+        font-size: 18px;
         margin-bottom: 41px;
     }
 }
@@ -271,7 +284,7 @@ h1, h2, h3, h4, h5 {
 
 @media(max-width: 768px) {
     .header {
-        margin-bottom: 28px;
+        margin-bottom: 7px;
     }
 
     .logo__title {
@@ -290,7 +303,7 @@ h1, h2, h3, h4, h5 {
 
     .main__title {
         font-size: 30px;
-        margin-bottom: 44px;
+        margin-bottom: 32px;
     }
 
     .main__subtitle {
@@ -364,17 +377,31 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 376px) {
+
+    .logo__circle_color_blue {
+        top: 57%;
+        left: 34%;
+    }
+
+    .logo__circle_color_dark-blue {
+        top: 48%;
+        left: 16%;
+    }
+
+
     .header__nav_mobile {
-        padding: 30% 30%;
+        padding: 29% 31%;
+    }
+
+    .main {
+        background-size: 280px 239px;
+    }
+
+    .main__title {
+        padding-top: 8px;
     }
 }
-
-
-
-
-
-
 
 
 
