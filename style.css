@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
 
 }
 
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5 {
     background-size: 514px 439px;
 
 
-    padding: 0 58% 361px 0;
+    padding: 16px 58% 361px 0;
 }
 
 .main__title {
@@ -190,25 +190,120 @@ h1, h2, h3, h4, h5 {
 
 /*Button*/
 
+.btn__content {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+.btn__content:before,
+.btn__content:after {
+    content: '';
+    position: absolute;
+
+    border: 2px solid red;
+
+    width: 50px;
+    height: 50px;
+
+    top: -5px;
+    left: 40%;
+
+    transition: all .6s ease 0s;
+
+    z-index: 1;
+}
+
+.btn__content:before {
+    animation: rotate 25s linear infinite;
+}
+
+.btn__content:after {
+    animation: rotate 22s linear infinite;
+}
+
+.btn__content:hover:before,
+.btn__content:hover:after {
+    left: 100%;
+    opacity: 0;
+}
+
 .main__btn {
+    display: flex;
+    position: relative;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
 
     padding: 14px 21px;
-    color: #fff;
-    background-color: #0056EC;
+    color: rgba(0, 0, 0, .3);
 
-    border: none;
     border-radius: 5px;
-
     cursor: pointer;
+    overflow: hidden;
 
-    transition: background-color .2s linear;
+    transition: all .7s ease 0s;
+
+    top: 0;
 }
 
-.main__btn:hover {
-    background-color: #00389a;
+.main__btn:before,
+.main__btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+
+    width: 50%;
+    height: 100%;
+
+    background-color: #eee;
+
+    transition: all .6s ease 0s;
+}
+
+.main__btn:before {
+    left: 0;
+    z-index: 2;
+}
+.main__btn:after {
+    right: 0;
+}
+
+.main__btn span {
+    z-index: 2;
+}
+
+.btn__content:hover .main__btn:before {
+    width: 100%;
+}
+
+.btn__content:hover .main__btn {
+    color: #fff;
+    box-shadow: 0 5px 0 0 #002c79;
+    top: -10px;
+}
+
+.btn__content:active .main__btn {
+    top: -5px;
+    box-shadow: 0 2px 0 #002c79;
+    transition: all .1s ease 0s;
+
+}
+
+.btn__content:hover .main__btn:before,
+.btn__content:hover .main__btn:after {
+    background-color: #0056EC;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -402,6 +497,7 @@ h1, h2, h3, h4, h5 {
         padding-top: 8px;
     }
 }
+
 
 
 
