@@ -435,9 +435,10 @@ h1, h2, h3, h4, h5 {
 
         text-align: center;
 
-        width: 300px;
+        width: 100%;
         height: 100%;
-        padding: 30% 40%;
+
+        padding: 20vh 40vw;
 
         background-color: #fff;
         z-index: 1000;
@@ -495,9 +496,9 @@ h1, h2, h3, h4, h5 {
         left: 16%;
     }
 
-
     .header__nav_mobile {
-        padding: 29% 31%;
+        padding: 20vh 30vw;
+
     }
 
     .main {
