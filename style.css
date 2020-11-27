@@ -588,6 +588,7 @@ h1, h2, h3, h4, h5 {
     .main__title {
         line-height: 40px;
         padding-top: 16px;
+        margin-bottom: 34px;
     }
 
     .main__subtitle {
