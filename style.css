@@ -356,6 +356,16 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+@media(max-width: 1367px) {
+    .header__nav {
+        padding-right: 6px;
+    }
+
+    .main__text {
+        margin-right: 0;
+    }
+}
+
 
 @media(max-width: 1024px) {
     .container {
@@ -538,7 +548,7 @@ h1, h2, h3, h4, h5 {
 }
 
 
-@media(max-width: 375px) {
+@media(max-width: 376px) {
     .container {
         width: 87%;
     }
