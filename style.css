@@ -61,13 +61,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .header__nav {
-    padding-top: 8px;
+    padding: 8px 55px 0 0;
 }
 
 .nav__link {
     position: relative;
     font: 500 14px/16px 'Roboto';
-    margin-right: 18px;
+    margin-right: 16px;
     text-decoration: none;
     color: #000;
 
@@ -155,8 +155,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .main__text {
-    width: 434px;
+    width: 418px;
     padding-top: 15px;
+    margin-right: 80px;
 }
 
 .main__title {
@@ -355,6 +356,16 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+@media(max-width: 1367px) {
+    .header__nav {
+        padding-right: 6px;
+    }
+
+    .main__text {
+        margin-right: 0;
+    }
+}
+
 
 @media(max-width: 1024px) {
     .container {
@@ -440,6 +451,12 @@ h1, h2, h3, h4, h5 {
         align-items: center;
     }
 
+    .main__text {
+        max-width: 100%;
+        width: 580px;
+
+    }
+
     .main__title {
         font-size: 30px;
         margin-bottom: 32px;
@@ -449,7 +466,8 @@ h1, h2, h3, h4, h5 {
         font-size: 16px;
         margin: 0 auto 39px;
 
-        width: 360px;
+        width: 100%;
+        max-width: 360px;
     }
 
     .main__photo {
@@ -530,7 +548,7 @@ h1, h2, h3, h4, h5 {
 }
 
 
-@media(max-width: 375px) {
+@media(max-width: 376px) {
     .container {
         width: 87%;
     }
