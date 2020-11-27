@@ -2,6 +2,7 @@ body {
     margin: 0;
     max-width: 1920px;
     min-width: 375px;
+    height: 100vh;
 }
 
 h1, h2, h3, h4, h5 {
@@ -459,12 +460,13 @@ h1, h2, h3, h4, h5 {
 
     .main__title {
         font-size: 30px;
-        margin-bottom: 32px;
+        margin-bottom: 22px;
+        line-height: 1.2;
     }
 
     .main__subtitle {
         font-size: 16px;
-        margin: 0 auto 39px;
+        margin: 0 auto 37px;
 
         width: 100%;
         max-width: 360px;
