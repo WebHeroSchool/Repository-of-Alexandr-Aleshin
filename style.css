@@ -440,6 +440,12 @@ h1, h2, h3, h4, h5 {
         align-items: center;
     }
 
+    .main__text {
+        max-width: 100%;
+        width: 580px;
+
+    }
+
     .main__title {
         font-size: 30px;
         margin-bottom: 32px;
@@ -449,7 +455,8 @@ h1, h2, h3, h4, h5 {
         font-size: 16px;
         margin: 0 auto 39px;
 
-        width: 360px;
+        width: 100%;
+        max-width: 360px;
     }
 
     .main__photo {
